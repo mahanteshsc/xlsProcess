@@ -69,16 +69,14 @@ var headers =[];
             if(!headers.includes(val)){
               headers.push(val);
             }
-            if(!header.includes(val)){
               header.push(val);
-            }
           }else{
             // allData[headers[col-1]][Object.values(line)[0]] = val;
             var keyVal0 = String(header[col-1]);
             // var keyVal0 = String(Object.keys(line)[0]);
             var keyVal1 = String(Object.values(line)[0]);
             // console.log("***"+keyVal0+"**"+header[col]+" ***"+header[col-1]+"****"+val);
-            // console.log("***"+keyVal0+"**"+header[col-1]+"****"+val);
+            // console.log("***"+keyVal0+"**"+header[col-1]+"****"+val+"**"+keyVal1);
             dataJson[keyVal0] = Object.assign({}, dataJson[keyVal0]);
             // dataJson[keyVal0][keyVal1]=val;
             var res = (isNaN(parseFloat(val))? val : parseFloat(val));
@@ -329,8 +327,8 @@ const headingArry = [
 //   {List: 'MS', Rank: 0, Price: 'some note', misc: 'not shown'}
 // ]
 
-console.log(headingArry);
-console.log(itemsJson[0]);
+// console.log(headingArry);
+// console.log(itemsJson[0]);
 
        const report = excel.buildExport(
          [
