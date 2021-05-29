@@ -6,7 +6,7 @@ var schData = [
   {startTime:800, endTime:1000},//100
   {startTime:900, endTime:1100}
 ]
-
+ 
 
 
 const fun1 = (qSt, qEnd) =>{
